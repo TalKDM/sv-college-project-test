@@ -1,0 +1,146 @@
+.navbar-main {
+    background-color: #365486;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    font-family: 'Black Ops One', system-ui;
+    letter-spacing: 0.5px;
+    color: #444444;
+background: #FFFFFF;
+text-shadow: 1px 0px 1px #7FC7D9, 0px 1px 1px #7FC7D9, 2px 1px 1px #7FC7D9, 1px 2px 1px #7FC7D9, 3px 2px 1px #7FC7D9, 2px 3px 1px #7FC7D9, 4px 3px 1px #7FC7D9, 3px 4px 1px #7FC7D9, 5px 4px 1px #7FC7D9, 4px 5px 1px #7FC7D9, 6px 5px 1px yellow, 5px 6px 1px yellow, 7px 6px 1px yellow;
+color: #272727;
+background: transparent;
+}
+
+.FaCloudSun {
+    color: yellow;
+}
+
+.navbar-mobileMenu {
+    display: none;
+}
+
+.navbar-buttons nav {
+    margin-right: 2rem;
+    display: flex;
+    gap: 1em;
+}
+
+.navbar-buttons button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #7FC7D9;
+    border-radius: 15px;
+    padding: 0.3rem;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    color: #DCF2F1;
+    transition: 0.3s;
+}
+
+.navbar-buttons button:hover {
+    color: #7FC7D9;
+    border: 2px solid #DCF2F1;
+}
+
+.navbar-buttons-menuButton {
+    display: none;
+}
+
+@media(max-width: 768px) {
+
+    .navbar-logo {
+        font-size: 10px;
+    }
+    .navbar-buttons-menuButton {
+        display: flex;
+    }
+    
+    .navbar-buttons nav {
+        display: none;
+    }
+
+    .navbar-main {
+        display: flex;
+    }
+
+    .navbar-mobileMenu {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        top: 0rem;
+        background-color: #365486;
+        height: 9rem;
+        right: 0rem;
+        flex-direction: column;
+        position: absolute;
+        border-bottom-left-radius: 15px;
+        -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        z-index: 100;
+    }
+
+    @-webkit-keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+
+    .navbar-mobileMenu button {
+        cursor: pointer;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid #7FC7D9;
+        border-radius: 5px;
+        margin: 1px;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.8px;
+        font-size: 13px;
+    }
+
+    .navbar-mobileMenu button:hover {
+        color: #7FC7D9;
+    }
+
+    .IoClose {
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        color: red;
+    }
+
+}

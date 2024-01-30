@@ -1,0 +1,78 @@
+.favorites-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-indent: 2rem;
+    height: 2.5rem;
+    background-color: #7FC7D9;
+    gap: 0.4rem;
+}
+
+.favorites-header h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    color: #0F1035;
+    text-shadow: 4px 4px 2px rgba(255,255,255,0.6);
+}
+
+.favorites-favCities {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.favorites-favCities-city {
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.favorites-favCities-city:hover {
+    color: red;
+}
+
+.favorites-content p {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    -webkit-animation: blink-1 5s infinite both;
+    animation: blink-1 5s infinite both;
+}
+
+@-webkit-keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+@media(max-width: 768px) {
+  .favorites-favCities {
+    flex-direction: column;
+  }
+
+  .favorites-favCities-city {
+    width: 14rem;
+  }
+
+}
