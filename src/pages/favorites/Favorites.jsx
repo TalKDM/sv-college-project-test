@@ -12,7 +12,7 @@ const Favorites = (props) => {
       <MdFavorite size={30} color='red'/>
       </div>
       <div className="favorites-content">
-      {favCities.length === 0 && <p>No Favorites cities yes!</p>}
+      {favCities.length === 0 && <p>No Favorites cities yet!</p>}
       {favCities.length !== 0 && <FavCities favCities={favCities} setCityData={setCityData} setCityData5Days={setCityData5Days} setChosenCity={setChosenCity}/>}
       </div>
     </div>
